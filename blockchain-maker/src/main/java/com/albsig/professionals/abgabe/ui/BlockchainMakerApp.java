@@ -7,6 +7,7 @@ import com.albsig.proffesionals.abgabe.manager.JewelryManager;
 import com.albsig.proffesionals.abgabe.manager.UserManager;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.ScrolledComposite;
 import org.eclipse.swt.graphics.Color;
@@ -21,7 +22,6 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-
 
 /**
  * This class creates the application.
@@ -78,7 +78,6 @@ public class BlockchainMakerApp {
     GridLayout gridShell = new GridLayout(noOfCols, sameWidth);
     shell.setLayout(gridShell);
 
-
     leftComposite = new Composite(shell, SWT.NONE);
     leftComposite.setLayout(new GridLayout(2, true));
 
@@ -89,11 +88,9 @@ public class BlockchainMakerApp {
     GridData rightData = new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1);
     rightCompositeScroll.setExpandHorizontal(true);
     rightCompositeScroll.setLayoutData(rightData);
-    rightCompositeScroll.setBackground(new Color(202, 202, 202));
+    rightCompositeScroll.setBackground(new Color(display, 202, 202, 202));
     initContentComposite();
   }
-
-
 
   private void initComboBoxList() {
     initComboBoxLabels();
@@ -182,7 +179,6 @@ public class BlockchainMakerApp {
     generateBlockBtn.setLayoutData(gridData);
 
     setGenerateBlockListener();
-
 
   }
 

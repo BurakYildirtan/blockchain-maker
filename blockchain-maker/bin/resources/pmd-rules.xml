@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="PMD rules" description="rules for blockchain-maker">
+ <rule ref="category/java/bestpractices.xml/UnusedLocalVariable">
+  <description>UnusedLocalVariable</description>
+ </rule>
+ <rule ref="category/java/bestpractices.xml/UnusedPrivateField">
+  <description>UnusedPrivateField</description>
+ </rule>
+ <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName">
+  <description>FullyQualifiedName</description>
+ </rule>
+</ruleset>
+

@@ -22,7 +22,6 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
-
 /**
  * Listener to create a hash-block.
  */
@@ -101,7 +100,7 @@ public class SelectionListenerCreateBlock extends SelectionAdapter {
     Label label = new Label(content, SWT.None);
     label.setFont(new Font(display, "Arial", 12, SWT.BOLD));
     label.setText(setBlockLabelText(block));
-    label.setBackground(new Color(222, 138, 13));
+    label.setBackground(new Color(display, 222, 138, 13));
     labelList.add(label);
     LOGGER.info("new block label created and added to list");
   }
