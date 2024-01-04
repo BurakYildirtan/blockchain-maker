@@ -122,6 +122,16 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-pmd-plugin</artifactId>
+					<version>3.21.2</version>
+					<configuration>
+						<rulesets>
+							<ruleset>${project.basedir}/resources/pmd-rules.xml</ruleset>
+						</rulesets>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
