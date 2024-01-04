@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="ERROR">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" level="TRACE">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%7pid] %-5p --- myapp              %-42.42c{1.} : %m%n" />
+            <LevelRangeFilter maxLevel="ALL" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="trace">
+            <!-- Console can still output logs from higher log levels. -->
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+    <StatusListener class="org.apache.logging.log4j.core.config.status.StatusConsoleListener" />
+</Configuration>
